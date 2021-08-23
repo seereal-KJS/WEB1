@@ -49,6 +49,20 @@
              padding-right: 60px;
            }
     </style>
+    <script>
+    function nightdayhandler(){
+      if(document.querySelector('#but2').value === 'Night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#but2').value = 'Day';
+      }
+      else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#but2').value = 'Night';
+      }
+    }
+    </script>
   </head>
   <body>
     <b><h1><a href="index.html" style="color:gray; text-decoration: none;">WEB</a></h1></b>
@@ -59,17 +73,8 @@
       <li><h3><a href="3.html" style="background-color:LightPink; color:LightSlateGrey; text-decoration: none;">JavaScript</a></h3></li>
       <p>
         <input id="but2" class="but" type="button" value="Night" onclick="
-        if(document.querySelector('#but2').value === 'Night'){
-          document.querySelector('body').style.backgroundColor = 'black';
-          document.querySelector('body').style.color = 'white';
-          document.querySelector('#but2').value = 'Day';
-        }
-        else{
-          document.querySelector('body').style.backgroundColor = 'white';
-          document.querySelector('body').style.color = 'black';
-          document.querySelector('#but2').value = 'Night';
-        }">
-    </p>
+        nightdayhandler();">
+      </p>
     </ol>
     <div id="article">
     <h2 style="background-color:Turquoise; color:SeaShell;">HTML</h2>
