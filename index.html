@@ -2,13 +2,7 @@
 <html>
   <head><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBM163X6PB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QBM163X6PB');
-</script>
+<script src ="analyze.js"></script>
     <title>WEB1-Welcome</title>
     <meta charset="utf-8">
     <style>
@@ -49,20 +43,7 @@
        padding-right: 60px;
      }
     </style>
-    <script>
-    function nightdayhandler(){
-      if(document.querySelector('#but2').value === 'Night'){
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        document.querySelector('#but2').value = 'Day';
-      }
-      else{
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        document.querySelector('#but2').value = 'Night';
-      }
-    }
-    </script>
+    <script src ="colors.js"></script>
   </head>
   <body>
     <b><h1><a href="index.html" style="color:gray; text-decoration: none;">WEB</a></h1></b>
